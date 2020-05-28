@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/cerulean/bootstrap.min.css"
+    />
+    <script src="https://kit.fontawesome.com/5db7d78c26.js"></script>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Exam Form</title>
+  </head>
+  <body>
+    <script>
+      const examPeriods = [
+        {
+          id: 1,
+          course: "Internet Programming",
+          extratime: [
+            { id: 1, time: "8:30" },
+            { id: 2, time: "12:00" },
+            { id: 3, time: "14:00" },
+          ],
+          duration: {
+            name: "Duration (mins)",
+            mins: [
+              { id: 1, time: 30 },
+              { id: 2, time: 45 },
+              { id: 3, time: 60 },
+              { id: 4, time: 90 },
+            ],
+          },
+        },
+      ];
+    </script>
+
+    <header id="header">
+      <div class="header-overlay"></div>
+      <div class="mcontainer">
+        <div class="links">
+          <div class="logo"><img src="./images/ciulogo.png" /></div>
+
+          <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="./exam.html">Online Exam</a></li>
+            <li><a href="./examform.html">Exam Form</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="intro">
+          Online Exams
+        </div>
+      </div>
+    </header>
+
+    <section id="exam-form">
+      <div class="mcontainer">
+        <h3>Online examp Periods</h3>
+
+        <div class="exam-grid">
+          <div class="g-name">
+            <h4>Internet progamming</h4>
+          </div>
+          <div class="g-time">
+            <form>
+              <fieldset>
+                <div class="form-group">
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="customRadio1"
+                      name="customRadio"
+                      class="custom-control-input"
+                      checked=""
+                    />
+                    <label class="custom-control-label" for="customRadio1"
+                      >08:30</label
+                    >
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="customRadio2"
+                      name="customRadio"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="customRadio2"
+                      >12:00</label
+                    >
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="customRadio3"
+                      name="customRadio"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="customRadio3"
+                      >14:00</label
+                    >
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="g-duration">
+            <form>
+              <fieldset>
+                <div class="form-group">
+                  <select class="custom-select">
+                    <option selected="">Duration in mins</option>
+                    <option value="1">30</option>
+                    <option value="2">45</option>
+                    <option value="3">60</option>
+                    <option value="4">90</option>
+                  </select>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
