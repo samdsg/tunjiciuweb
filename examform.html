@@ -13,29 +13,6 @@
     <title>Exam Form</title>
   </head>
   <body>
-    <script>
-      const examPeriods = [
-        {
-          id: 1,
-          course: "Internet Programming",
-          extratime: [
-            { id: 1, time: "8:30" },
-            { id: 2, time: "12:00" },
-            { id: 3, time: "14:00" },
-          ],
-          duration: {
-            name: "Duration (mins)",
-            mins: [
-              { id: 1, time: 30 },
-              { id: 2, time: 45 },
-              { id: 3, time: 60 },
-              { id: 4, time: 90 },
-            ],
-          },
-        },
-      ];
-    </script>
-
     <header id="header">
       <div class="header-overlay"></div>
       <div class="mcontainer">
@@ -59,10 +36,21 @@
     <section id="exam-form">
       <div class="mcontainer">
         <h3>Online examp Periods</h3>
-
-        <div class="exam-grid">
+          <div class="course-container"></div>
+        <!-- <div class="exam-grid">
           <div class="g-name">
-            <h4>Internet progamming</h4>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="exampleRadios"
+                id="exampleRadios1"
+                value="option1"
+              />
+              <label class="form-check-label" for="exampleRadios1">
+                <h4>Internet progamming</h4>
+              </label>
+            </div>
           </div>
           <div class="g-time">
             <form>
@@ -121,8 +109,9 @@
               </fieldset>
             </form>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
+    <script src="./main.js"></script>
   </body>
 </html>
